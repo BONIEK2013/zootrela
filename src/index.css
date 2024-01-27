@@ -17,6 +17,16 @@ body {
   display: grid;
   gap: 2rem;
 }
+.main {
+  display: grid;
+  justify-content: center;
+  object-fit: cover;
+}
+.container {
+  width: 90vw;
+  display: grid;
+  justify-content: center;
+}
 
 @media screen and (min-width: 768px) {
   .album-list {
@@ -33,11 +43,13 @@ body {
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
+
   .main-banner {
     text-align: center;
+    align-items: center;
     color: white;
-    padding: 0 3rem;
   }
+
   .main {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("./catPhotos/Collection/collection.jpg") center/cover no-repeat;
@@ -94,8 +106,6 @@ h1 {
 }
 .logo {
   cursor: pointer;
-  align-items: center;
-  text-align: center;
 }
 .image-pointer {
   cursor: pointer;
@@ -105,7 +115,7 @@ h1 {
   padding: 1rem;
   width: 90vw;
   display: flex;
-  gap: 1rem;
+
   justify-content: center;
   i {
     font-size: 2rem;
@@ -114,9 +124,10 @@ h1 {
   i:hover {
     color: #f47288;
   }
-  p {
+  .par {
     text-transform: capitalize;
     padding-top: 0.5rem;
+    padding-right: 0.5rem;
     color: #f47288;
     text-align: center;
   }
