@@ -94,6 +94,8 @@ h1 {
 }
 .logo {
   cursor: pointer;
+  align-items: center;
+  text-align: center;
 }
 .image-pointer {
   cursor: pointer;
@@ -116,7 +118,7 @@ h1 {
     text-transform: capitalize;
     padding-top: 0.5rem;
     color: #f47288;
-    padding-left: 4rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
