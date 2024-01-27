@@ -24,13 +24,35 @@ body {
 }
 .container {
   width: 90vw;
+  margin: auto;
   display: grid;
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 2rem;
+  color: #639bbd;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+a:hover {
+  color: #f47288;
+}
+i {
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  color: #f8a531;
+}
+i:hover {
+  color: #f47288;
+}
+
 @media screen and (min-width: 768px) {
   .album-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
 }
@@ -53,6 +75,22 @@ body {
   .main {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("./catPhotos/Collection/collection.jpg") center/cover no-repeat;
+  }
+  .container {
+    display: grid;
+    justify-content: flex-end;
+  }
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #f8a531;
+  }
+  i {
+    color: #fff;
+  }
+  i:hover {
+    color: #f8a531;
   }
 }
 
@@ -82,9 +120,7 @@ body {
   margin-top: "0.5rem";
   letter-spacing: 2px;
 }
-/* book p {
-  margin: 1rem 0 0, 5rem;
-} */
+
 .number {
   position: absolute;
   top: 0;
@@ -103,52 +139,4 @@ h1 {
   text-transform: capitalize;
 
   text-shadow: 2px 2px rgb(169, 136, 136);
-}
-.logo {
-  cursor: pointer;
-}
-.image-pointer {
-  cursor: pointer;
-}
-
-.container {
-  padding: 1rem;
-  width: 90vw;
-  display: flex;
-
-  justify-content: center;
-  i {
-    font-size: 2rem;
-    color: #f8a531;
-  }
-  i:hover {
-    color: #f47288;
-  }
-  .par {
-    text-transform: capitalize;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    color: #f47288;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  i {
-    font-size: 2rem;
-    background: transparent;
-    color: #f1f5f8 !important;
-    transition: all 0.3s linear;
-  }
-}
-@media screen and (min-width: 768px) {
-  p {
-    color: #f1f5f8 !important;
-  }
-  i:hover {
-    color: #f47288 !important;
-  }
 }
