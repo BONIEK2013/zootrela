@@ -11,11 +11,10 @@ const Albumlist = () => {
     <>
       <section className="main">
         <div className="main-banner">
-          <div className="container">
-            <Icon />
+          <Icon />
+          <div className="link">
+            <img src={logo} className="logo" alt="logo" />
           </div>
-
-          <img src={logo} className="logo" alt="logo" />
         </div>
       </section>
       <section className="album-list">

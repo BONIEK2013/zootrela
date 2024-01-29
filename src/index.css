@@ -10,23 +10,17 @@ body {
   background: #f1f5f8;
   color: #222;
 }
+
 .album-list {
   width: 90vw;
   max-width: 1170px;
   margin: 5rem auto;
   display: grid;
-  gap: 2rem;
-}
-.main {
-  display: grid;
   justify-content: center;
-  object-fit: cover;
+  /* gap: 2rem; */
 }
-.container {
-  width: 90vw;
-  margin: auto;
-  display: grid;
-  justify-content: center;
+.main-banner {
+  text-align: center;
 }
 
 a {
@@ -59,7 +53,7 @@ i:hover {
 @media screen and (min-width: 768px) {
   .main {
     min-height: 50vh;
-    background: grey;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,18 +61,21 @@ i:hover {
   }
 
   .main-banner {
-    text-align: center;
+    text-align: end;
     align-items: center;
-    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    width: 80vw;
   }
 
   .main {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("./catPhotos/Collection/collection.jpg") center/cover no-repeat;
   }
-  .container {
+  .link {
     display: grid;
-    justify-content: flex-end;
+    justify-content: center;
   }
   a {
     color: #fff;
@@ -95,9 +92,12 @@ i:hover {
 }
 
 .album {
+  display: grid;
+  justify-content: center;
   background: #fff;
   border-radius: 1rem;
   padding: 2rem;
+
   text-align: center;
   position: relative;
   /* border: 1px solid;
