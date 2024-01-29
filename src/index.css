@@ -10,24 +10,37 @@ body {
   background: #f1f5f8;
   color: #222;
 }
+/* για κινητα, μικρη οθονη */
+/* .main {
+  width: 90vw;
+  max-width: 1170px;
+  gap: 2rem;
+  margin: 2rem auto;
+} */
+.main-banner {
+  text-align: center;
+  padding-top: 1rem;
+}
+.link {
+  /* background: #49ab44; */
+  display: grid;
+  justify-content: center;
+}
 
 .album-list {
   width: 90vw;
   max-width: 1170px;
   margin: 5rem auto;
   display: grid;
-  justify-content: center;
-  /* gap: 2rem; */
-}
-.main-banner {
-  text-align: center;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 a {
   text-decoration: none;
   text-transform: capitalize;
   line-height: 2rem;
-  color: #639bbd;
+  color: #49ab44;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.5rem;
@@ -38,7 +51,7 @@ a:hover {
 i {
   padding-left: 0.5rem;
   font-size: 2rem;
-  color: #f8a531;
+  color: #49ab44;
 }
 i:hover {
   color: #f47288;
@@ -47,46 +60,23 @@ i:hover {
 @media screen and (min-width: 768px) {
   .album-list {
     grid-template-columns: repeat(3, 1fr);
-    align-items: start;
   }
 }
 @media screen and (min-width: 768px) {
   .main {
-    min-height: 50vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .main-banner {
-    text-align: end;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    width: 80vw;
-  }
-
-  .main {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url("./catPhotos/Collection/collection.jpg") center/cover no-repeat;
   }
-  .link {
-    display: grid;
-    justify-content: center;
-  }
   a {
     color: #fff;
-  }
-  a:hover {
-    color: #f8a531;
   }
   i {
     color: #fff;
   }
   i:hover {
+    color: #f8a531;
+  }
+  a:hover {
     color: #f8a531;
   }
 }
@@ -97,7 +87,6 @@ i:hover {
   background: #fff;
   border-radius: 1rem;
   padding: 2rem;
-
   text-align: center;
   position: relative;
   /* border: 1px solid;
