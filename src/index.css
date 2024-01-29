@@ -65,6 +65,11 @@ i:hover {
 
 @media screen and (min-width: 768px) {
   .album-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 864) {
+  .album-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
