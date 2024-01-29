@@ -18,11 +18,7 @@ html {
   padding: 5rem 0;
   scroll-margin-top: 4rem;
 }
-.main-banner {
-  width: 90vw;
-  margin: auto;
-  max-width: 1170px;
-}
+
 .center-section {
   width: 90vw;
   margin: auto;
