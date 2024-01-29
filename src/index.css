@@ -30,17 +30,17 @@ html {
   .center-section {
     width: 95vw;
   }
-  @media screen and (min-width: 665px) {
-    .featured-center {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
+}
+@media screen and (min-width: 786px) {
+  .featured-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
-  @media screen and (min-width: 1170px) {
-    .featured-center {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+}
+@media screen and (min-width: 1170px) {
+  .featured-center {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
