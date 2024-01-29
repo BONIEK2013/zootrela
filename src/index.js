@@ -18,7 +18,7 @@ const Albumlist = () => {
         </div>
       </section>
       <section className="section">
-        <div className="album-list">
+        <div className="center-section featured-center">
           {alboums.map((newalbum, index) => {
             return <Album {...newalbum} key={newalbum.id} number={index} />;
           })}
