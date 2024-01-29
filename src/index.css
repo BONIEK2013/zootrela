@@ -17,6 +17,7 @@ body {
   gap: 2rem;
   margin: 2rem auto;
 } */
+
 .main-banner {
   text-align: center;
   padding-top: 1rem;
@@ -28,12 +29,17 @@ body {
 }
 
 .album-list {
-  width: 90vw;
+  width: 80vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 4rem auto;
   display: grid;
+
   grid-template-columns: 1fr;
   gap: 2rem;
+}
+.section {
+  display: grid;
+  justify-content: center;
 }
 
 a {

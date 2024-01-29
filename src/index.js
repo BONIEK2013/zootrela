@@ -17,10 +17,12 @@ const Albumlist = () => {
           </div>
         </div>
       </section>
-      <section className="album-list">
-        {alboums.map((newalbum, index) => {
-          return <Album {...newalbum} key={newalbum.id} number={index} />;
-        })}
+      <section className="section">
+        <div className="album-list">
+          {alboums.map((newalbum, index) => {
+            return <Album {...newalbum} key={newalbum.id} number={index} />;
+          })}
+        </div>
       </section>
     </>
   );
