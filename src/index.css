@@ -34,11 +34,8 @@ html {
 @media screen and (min-width: 768px) {
   .featured-center {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-  }
-  .center-section {
-    width: 95vw;
   }
 }
 
