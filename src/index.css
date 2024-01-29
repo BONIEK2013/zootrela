@@ -26,24 +26,20 @@ html {
 .featured-center {
   display: grid;
 }
-/* @media screen and (min-width: 992px) {
-  .center-section {
-    width: 95vw;
-  }
-} */
-/* @media screen and (min-width: 768px) {
-  .featured-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-} */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .center-section {
     width: 95vw;
   }
 }
 @media screen and (min-width: 768px) {
+  .featured-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
   .featured-center {
     grid-template-columns: 1fr 1fr 1fr;
   }
